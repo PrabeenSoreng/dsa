@@ -1,3 +1,5 @@
+// A function which takes 2 string and checks if its an anagram or not.
+
 function anagram(str1, str2) {
     let frequencyCounter1 = {};
     let frequencyCounter2 = {};
@@ -22,7 +24,7 @@ function anagram(str1, str2) {
     return true;
 }
 
-// refactor
+// Refactored
 
 function anagram(str1, str2) {
     console.log('refactored');

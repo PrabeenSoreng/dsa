@@ -1,3 +1,5 @@
+//A function which takes 2 arrays and checks an array value times 2 to its corresponding array.
+
 // Naive approach
 function same(arr1, arr2) {
     if (arr1.length !== arr2.length) return false;
