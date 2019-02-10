@@ -11,7 +11,7 @@ function sumZero(arr) {
     }
 }
 
-// Refactored
+// Refactored - using Multiple Pointer pattern
 function sumZero(arr) {
     let left = 0;
     let right = arr.length - 1;

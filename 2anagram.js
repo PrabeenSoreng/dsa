@@ -1,3 +1,5 @@
+// Frequency Counter pattern.
+
 // A function which takes 2 string and checks if its an anagram or not.
 
 function anagram(str1, str2) {

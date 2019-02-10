@@ -12,7 +12,7 @@ function same(arr1, arr2) {
     return true;
 }
 
-// Refactored
+// Refactored - using Frequency Counter Pattern
 
 function same(arr1, arr2) {
     console.log('refactored');
