@@ -68,6 +68,26 @@ class Graph {
     }
     return result;
   }
+
+  BF(start) {
+    const queue = [start];
+    const result = [];
+    const visited = {};
+    let currentVertex;
+    visited[start] = true;
+
+    while (queue.length) {
+      currentVertex = queue.shift();
+      result.push(currentVertex);
+      this.adjacencyList[currentVertex].forEach(neighbor => {
+        if (!visited[neighbor]) {
+          visited[neighbor] = true;
+          queue.push(neighbor);
+        }
+      });
+    }
+    return result;
+  }
 }
 
 let graph = new Graph();
@@ -88,3 +108,4 @@ graph.addEdge("E", "F");
 console.log(graph.adjacencyList);
 console.log(graph.DFRecursive("A"));
 console.log(graph.DFIterative("A"));
+console.log(graph.BF("A"));
